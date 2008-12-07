@@ -46,3 +46,4 @@
   (interactive "p")
   (move-line (if (null n) 1 n)))
 
+(global-set-key [(control tab)] 'find-tag)

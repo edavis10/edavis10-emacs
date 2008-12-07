@@ -65,6 +65,15 @@
 ;;; Markdown, somehow it doesn't work is loaded eariler.  load-path issue?
 (load "~/.elisp/rc/markdown-rc")
 
+;;; Textmate
+(add-to-list 'load-path "~/.elisp/textmate.el/textmate.el")
+(require 'textmate)
+(textmate-mode)
+
+;;; yasnippet
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/.elisp/yasnippet-0.5.7/snippets/")
 
 ;;;; Custom 
 ;;; Load anything for custom-set-varables in one place.

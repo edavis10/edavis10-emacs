@@ -5,6 +5,10 @@
 
 (require 'ruby-mode)
 
+
+(defun ruby-indent-command ()
+  (interactive)
+  (ruby-indent-line t))
 ;;; ri
 
 (setq ri-ruby-script "~/.elisp/ri-emacs.rb")
